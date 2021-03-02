@@ -1,34 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mind.org.uk 27 Miles in 27 Days
+Welcome!  This repository contains the source code for the small web app that I have built to track progress of a charity running event that myself and a good friend are partaking in.  The live site is available at [run.soton.rocks](https://run.soton.rocks)
 
-## Getting Started
+![](https://i.imgur.com/wM2eXJF.jpg)
 
-First, run the development server:
+## Why, who and how?
+This March, societies from the University of Southampton be running 27 miles in 27 days in solidarity of the 27% of students who report a mental health problem whilst at university.More students are experiencing mental health problems than ever before. The number of students reporting a mental health problem is five times greater today than it was ten years ago, while the number of students dropping out because of mental health problems has trebled. Every student taking part in the 27 27 challenge is sending a clear message: its time to take our mental health seriously, and we wont give up until everyone with a mental health problem gets support and respect.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+We'd really appreciate donations to our cause, Mind has been a crucial charity to me and remains so to this day - if you feel you are able to support us, you can use the following links:
+ - [Tom (JustGiving)](https://www.justgiving.com/fundraising/tom2727)
+ - [Ross (JustGiving)](https://www.justgiving.com/fundraising/mindsocsoton)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology
+After building a quick mockup in Figma, we used NextJS (React) & TailwindCSS to build the app - it remains my favourite frontend "stack" due to it's incredible developer utility.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In addition to this, we're also making use of the JustGiving and Google Sheets APIs to pull in the relevant data on page load - this allows a nice dynamic count-up effect.
