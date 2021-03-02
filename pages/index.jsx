@@ -39,6 +39,30 @@ export default function Home() {
   }, [])
 
   return (
+    <>
+    <Head>
+      <title>Tom & Ross | Mind 27 27</title>
+      <meta name="description" content="Hi! We're Tom & Ross and this month, we’re each running 27 miles to campaign for student mental wellbeing." />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#702285" />
+      <meta name="msapplication-TileColor" content="#702285" />
+      <meta name="theme-color" content="#702285" />
+
+      <meta property="og:title" content="Tom & Ross | Mind 27 27" />
+      <meta property="og:url" content="https://run.soton.rocks" />
+      <meta property="og:description" content="Hi! We're Tom & Ross and this month, we’re each running 27 miles to campaign for student mental wellbeing." />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="/thumb.jpeg" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://run.soton.rocks" />
+      <meta property="twitter:title" content="Tom & Ross | Mind 27 27" />
+      <meta property="twitter:description" content="Hi! We're Tom & Ross and this month, we’re each running 27 miles to campaign for student mental wellbeing." />
+      <meta property="twitter:image" content="/thumb.jpeg" />
+    </Head>
     <main className="bg-gradient-1 min-h-screen flex flex-col">
       <div className="min-h-screen md:min-h-0 md:flex-grow">
         <div className="fixed md:hidden w-full" style={{bottom: '-20px'}}>
@@ -78,5 +102,6 @@ export default function Home() {
       </div>
       <div className="fixed bottom-1 right-2 font-hand text-purple">Built by <a className="underline" href="https://tommitchelmore.com" target="_blank" rel="noopener">Tom Mitchelmore</a></div>
     </main>
+    </>
   )
 }
