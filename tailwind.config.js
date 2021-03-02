@@ -22,7 +22,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Montserrat', 'sans-serif'],
-      'hand': ['Patrick Hand', 'cursive']
+      'hand': ['Patrick Hand', 'sans-serif']
     },
     extend: {},
   },
