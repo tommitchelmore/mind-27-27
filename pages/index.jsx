@@ -79,7 +79,7 @@ export default function Home() {
             <Button alt="true" onClick={() => {}}>Donate now!</Button>
           </div>
           <div className="flex justify-center items-center text-white pb-8">
-            <StatDisplay value={parseFloat(miles.tom) + parseFloat(miles.ross)}>Total miles run</StatDisplay>
+            <StatDisplay value={parseFloat(miles.tom) + parseFloat(miles.ross)}>Combined miles run</StatDisplay>
             <StatDisplay prefix="£" value={parseFloat(money.tom) + parseFloat(money.ross)}>Total raised</StatDisplay>
           </div>
           <p className="md:hidden font-hand text-white text-center text-3xl md:text-4xl xl:text-6xl pb-8">
