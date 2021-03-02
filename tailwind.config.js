@@ -6,9 +6,12 @@ module.exports = {
       white: {
         DEFAULT: '#ffffff'
       },
+      grey: {
+        DEFAULT: '#555555'
+      },
       blue: {
         DEFAULT: '#013378',
-        light: '#CDD5E5'
+        light: '#CDD5E5',
       },
       purple: {
         DEFAULT: '#702285'

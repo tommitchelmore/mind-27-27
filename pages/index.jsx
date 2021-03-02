@@ -2,7 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Button from '../components/Button'
+import DonateModalContent from '../components/DonateModalContent'
 import StatDisplay from '../components/StatDisplay'
+import StatModalContent from '../components/StatModelContent'
+
+import content from '../content'
 
 export default function Home() {
 
@@ -74,10 +78,10 @@ export default function Home() {
             <Image src="/27.png" alt="Mind 27 27 Logo" width={366} height={207} />
           </div>
           <p className="font-hand text-white text-center text-3xl md:text-4xl xl:text-6xl pb-8">
-            This month, we’re each running 27 miles to campaign for student mental wellbeing.
+            Hi! We're Tom & Ross and this month, we’re each running 27 miles to campaign for student mental wellbeing.
           </p>
           <div className="pb-8">
-            <Button alt="true" modal="true" text="Donate Now"><p>Test!</p></Button>
+            <Button alt="true" modal="true" text="Donate Now"><DonateModalContent /></Button>
           </div>
           <div className="flex justify-center items-center text-white pb-8">
             <StatDisplay value={parseFloat(miles.tom) + parseFloat(miles.ross)}>Combined miles run</StatDisplay>
@@ -87,8 +91,26 @@ export default function Home() {
             View our individual progress:
           </p>
           <div className="md:hidden grid grid-cols-2 gap-4 text-white">
-            <Button modal="true" text="Tom">Tom</Button>
-            <Button modal="true" text="Ross">Ross</Button>
+            <Button modal="true" text="Tom">
+              <StatModalContent 
+                name="Tom" 
+                text={content.tom.text}
+                moneyRaised={money.tom[0]} 
+                moneyGoal={money.tom[1]} 
+                milesRan={miles.tom}
+                pageLink={content.tom.pageLink}
+              />
+            </Button>
+            <Button modal="true" text="Ross">
+              <StatModalContent 
+                name="Ross" 
+                text={content.ross.text}
+                moneyRaised={money.ross[0]} 
+                moneyGoal={money.ross[1]} 
+                milesRan={miles.ross}
+                pageLink={content.ross.pageLink}
+              />
+            </Button>
           </div>
         </div>
       </div>
@@ -97,8 +119,26 @@ export default function Home() {
           View our individual progress:
         </p>
         <div className="grid grid-cols-2 gap-8 text-white">
-          <Button modal="true" text="Tom">Tom</Button>
-          <Button modal="true" text="Ross">Ross</Button>
+          <Button modal="true" text="Tom">
+            <StatModalContent 
+              name="Tom" 
+              text={content.tom.text}
+              moneyRaised={money.tom[0]} 
+              moneyGoal={money.tom[1]} 
+              milesRan={miles.tom}
+              pageLink={content.tom.pageLink}
+            />
+          </Button>
+          <Button modal="true" text="Ross">
+            <StatModalContent 
+              name="Ross" 
+              text={content.ross.text}
+              moneyRaised={money.ross[0]} 
+              moneyGoal={money.ross[1]} 
+              milesRan={miles.ross}
+              pageLink={content.ross.pageLink}
+            />
+          </Button>
         </div>
       </div>
       <div className="fixed bottom-1 right-2 font-hand text-purple">Built by <a className="underline" href="https://tommitchelmore.com" target="_blank" rel="noopener">Tom Mitchelmore</a></div>
