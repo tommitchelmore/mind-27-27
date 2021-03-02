@@ -63,12 +63,13 @@ export default function Home() {
       <meta property="twitter:description" content="Hi! We're Tom & Ross and this month, we’re each running 27 miles to campaign for student mental wellbeing." />
       <meta property="twitter:image" content="/thumb.jpeg" />
     </Head>
+    <div id="modal-root" className="relative z-50"></div>
     <main className="bg-gradient-1 min-h-screen flex flex-col">
       <div className="min-h-screen md:min-h-0 md:flex-grow">
         <div className="fixed md:hidden w-full" style={{bottom: '-20px'}}>
           <Image className="mx-auto min-w-screen" src="/earth.gif" alt="Spinning Earth Gif (Bottom of page)" width={700} height={350} />
         </div>
-        <div className="flex flex-col items-center p-8 xl:px-24 z-10 relative container mx-auto">
+        <div className="flex flex-col items-center p-8 xl:px-24 relative container mx-auto">
           <div className="w-4/5 pb-8 flex justify-center items-center">
             <Image src="/27.png" alt="Mind 27 27 Logo" width={366} height={207} />
           </div>
@@ -76,7 +77,7 @@ export default function Home() {
             This month, we’re each running 27 miles to campaign for student mental wellbeing.
           </p>
           <div className="pb-8">
-            <Button alt="true" onClick={() => {}}>Donate now!</Button>
+            <Button alt="true" modal="true" text="Donate Now"><p>Test!</p></Button>
           </div>
           <div className="flex justify-center items-center text-white pb-8">
             <StatDisplay value={parseFloat(miles.tom) + parseFloat(miles.ross)}>Combined miles run</StatDisplay>
@@ -86,8 +87,8 @@ export default function Home() {
             View our individual progress:
           </p>
           <div className="md:hidden grid grid-cols-2 gap-4 text-white">
-            <Button onClick={() => {}}>Tom</Button>
-            <Button onClick={() => {}}>Ross</Button>
+            <Button modal="true" text="Tom">Tom</Button>
+            <Button modal="true" text="Ross">Ross</Button>
           </div>
         </div>
       </div>
@@ -96,9 +97,9 @@ export default function Home() {
           View our individual progress:
         </p>
         <div className="grid grid-cols-2 gap-8 text-white">
-            <Button onClick={() => {}}>Tom</Button>
-            <Button onClick={() => {}}>Ross</Button>
-          </div>
+          <Button modal="true" text="Tom">Tom</Button>
+          <Button modal="true" text="Ross">Ross</Button>
+        </div>
       </div>
       <div className="fixed bottom-1 right-2 font-hand text-purple">Built by <a className="underline" href="https://tommitchelmore.com" target="_blank" rel="noopener">Tom Mitchelmore</a></div>
     </main>
