@@ -66,11 +66,11 @@ export default function Home() {
     <main className="bg-gradient-1 min-h-screen flex flex-col">
       <div className="min-h-screen md:min-h-0 md:flex-grow">
         <div className="fixed md:hidden w-full" style={{bottom: '-20px'}}>
-          <Image className="mx-auto min-w-screen" src="/earth.gif" width={700} height={350} />
+          <Image className="mx-auto min-w-screen" src="/earth.gif" alt="Spinning Earth Gif (Bottom of page)" width={700} height={350} />
         </div>
         <div className="flex flex-col items-center p-8 xl:px-24 z-10 relative container mx-auto">
           <div className="w-4/5 pb-8 flex justify-center items-center">
-            <Image src="/27.png" width={366} height={207} />
+            <Image src="/27.png" alt="Mind 27 27 Logo" width={366} height={207} />
           </div>
           <p className="font-hand text-white text-center text-3xl md:text-4xl xl:text-6xl pb-8">
             This month, we’re each running 27 miles to campaign for student mental wellbeing.
